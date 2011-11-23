@@ -80,9 +80,11 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="MessageGenerator.cs" />
     <Compile Include="web\application\Department.cs" />
+    <Compile Include="web\application\IContainDepartmentRequestInformation.cs" />
     <Compile Include="web\application\IDepartmentFinder.cs" />
     <Compile Include="web\application\IDisplayReportModels.cs" />
     <Compile Include="web\application\stubs\StubDepartmentFinder.cs" />
+    <Compile Include="web\application\ViewTheDepartmentsInADepartment.cs" />
     <Compile Include="web\application\ViewTheMainDepartmentsInTheStore.cs" />
     <Compile Include="web\core\BasicHandler.cs" />
     <Compile Include="web\core\CommandRegistry.cs" />
