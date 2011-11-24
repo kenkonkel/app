@@ -14,8 +14,8 @@ namespace app.web.core.stubs
 
     public IEnumerator<IProcessOneRequest> GetEnumerator()
     {
-      yield return
-        new RequestCommand(x => true, new ViewReport<IEnumerable<Department>>(new GetDepartmentsInDepartment()));
+		yield return new RequestCommand(x => x.IsForSubDepartments, new ViewReport<IEnumerable<Department>>(new GetDepartmentsInDepartment()));
+		yield return new RequestCommand(x => x.IsForMainDepartments, new ViewReport<IEnumerable<Department>>(new GetTheMainDepartments()));
     }
   }
 
